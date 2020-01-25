@@ -1,5 +1,5 @@
 import { Body, Query, Controller, Get, Param, Post, NotFoundException, BadRequestException, Patch, Delete } from '@nestjs/common';
-
+import { ApiBody, ApiQuery } from '@nestjs/swagger';
 import { RealtyService } from './realty.service';
 import { Realty } from '../entities/realty.entity';
 import { RealtyDto} from '../dtos/realty.dto';
@@ -46,6 +46,7 @@ export class RealtyController {
 
   }
 
+  @ApiBody({ type: RealtyDto })
   @Post('create')
   public async createRealty(@Body() realtyDto: RealtyDto): Promise<any> {
     try {
@@ -64,6 +65,7 @@ export class RealtyController {
     }
   }
 
+  @ApiBody({ type: RealtyDto })
   @Patch('patch/:id')
   public async updateRealty(
     @Param('id') id: number,
