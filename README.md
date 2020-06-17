@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/malkaviano/keycash-backend-challenge-rafaelk/badge)](https://www.codefactor.io/repository/github/malkaviano/keycash-backend-challenge-rafaelk)
+
 # keycash-backend-challenge-rafaelk
 Keycash Programming Test
 
